@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/c/font_3961178_wuwpqxx826p.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <script src="./js/jquery-3.4.1.js"></script>
+    <style>
+        /* 从阿里中引入图标 */
+        @font-face {
+            font-family: "iconfont";
+            /* Project id 3961178 */
+            src: url("//at.alicdn.com/t/c/font_3961178_wuwpqxx826p.woff2?t=1679129059621") format("woff2"),
+                url("//at.alicdn.com/t/c/font_3961178_wuwpqxx826p.woff?t=1679129059621") format("woff"),
+                url("//at.alicdn.com/t/c/font_3961178_wuwpqxx826p.ttf?t=1679129059621") format("truetype");
+        }
+
+        /* 要修改这个的样式 得把引入的iconfont.css包放在自己的css文件上面 */
+        .iconfont {
+            font-family: "iconfont" !important;
+            font-size: 16px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-stroke-width: 0.2px;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        html {
+            font-family: iconfont;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login">
+        <div class="loging">
+            <form action="">
+                <h3 class="title">Login</h3>
+                <div class="input__inner user" tabindex ="0">
+                    <span class="imguser"><i class="iconfont">&#xe611;</i></span>
+                    <input type="text" autocomplete="off" placeholder="用户名" class="offBorder" id="usercode">
+                </div>
+                <div class="input__inner user" tabindex ="0">
+                    <span class="imgpassword"><i class="iconfont">&#xe66c;</i></span>
+                    <input type="password" autocomplete="off" placeholder="密码" class="offBorder" id="usepassword">
+                </div>
+                <!-- <div class="input__inner user">
+                    <span class="imgsecureCode"><i class="iconfont">&#xe628;</i></span>
+                    <input type="text" autocomplete="off" placeholder="验证码" class="offBorder">
+                </div> -->
+
+                <div class="remDiv">
+                    <input type="checkbox" name="remember" id="rem">
+                    <label for="rem">记住密码</label>
+                </div>
+                <div id="fail"></div>
+                <div class="btn">
+                    <button class="reg">注册</button>
+                    <!-- <button class="log">登录</button> -->
+                    <div class="log">
+                        <a href="" class="log"></a>
+                        <span class="loginText"
+                            onclick="loginBtn(document.getElementById('usercode').value,document.getElementById('usepassword').value)">登录</span>
+                    </div>
+
+                </div>
+        </div>
+        </form>
+    </div>
+    <script src="./js/login.js"></script>
+</body>
+
+</html>

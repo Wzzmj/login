@@ -1,0 +1,58 @@
+/* 内外边距清零 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 斜体取消 */
+
+em,
+i {
+    font-style: normal;
+}
+
+/* 无圆点 */
+
+li {
+    list-style: none;
+}
+
+/* 无边框，底部不留白 */
+
+img {
+    cursor: pointer;
+    border: 0;
+    vertical-align: middle;
+}
+
+/* 无下划线 */
+
+a {
+    text-decoration: none;
+    color:rgb(70, 106, 121);
+}
+
+/* 行内块 */
+
+div {
+    display: inline-block;
+}
+
+/* 鼠标小手 */
+
+h2,
+h4,
+p {
+    cursor: pointer;
+}
+
+/* 抗锯齿性，字体，背景白色，大小，字体黑色 */
+
+body {
+    -webkit-font-smoothing: antialiased;
+    background-color: rgb(255, 255, 255);
+    font: 14px/1.5 "PingFangSC-Regular", "helvetica neue", tahoma, "PingFang SC", "microsoft yahei", arial,
+        "hiragino sans gb", sans-serif;
+    color: rgb(0, 0, 0);
+}

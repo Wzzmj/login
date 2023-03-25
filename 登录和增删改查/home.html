@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>菜单管理系统</title>
+</head>
+<link rel="stylesheet" href="./css/base.css">
+<link rel="stylesheet" href="./css/home.css">
+<script src="./js/jquery-3.4.1.js"></script>
+
+
+<body>
+    <div class="menu">
+        <ul>
+            <li class="userMe">
+                <div class="imgMe">
+                    <img src="./img/favorite.jpg" alt="">
+                </div>
+            </li>
+            <li class="father">菜单管理</li>
+            <li class="father control">账户设置</li>
+            <div class="sonMenu">
+                <ul>
+                    <li class="son">账户信息</li>
+                    <li class="son">切换账户</li>
+                </ul>
+            </div>
+            </li>
+            <li class="father">系统监控</li>
+            <li class="father">系统工具</li>
+            <li class="father">系统官网</li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="func">
+            <button class="funcBtn" onclick="addShow()"><a href="#" ><i><img src="./img/add.png" alt=""></i>&nbsp;新增</a></button>
+            <button class="funcBtn" onclick="searchShow()"><a href="#"><i><img src="./img/search.png" alt=""></i>&nbsp;查询</a></button>
+            <button class="funcBtn" onclick="resetShow()"><a href="#"><i><img src="./img/reset.png" alt=""></i>&nbsp;刷新</a></button>
+
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>菜名</th>
+                    <th>价格</th>
+                    <th>描述</th>
+                    <th>分类</th>
+                    <!-- <th>属性</th> -->
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+        <!-- 表格底部的换页按钮 -->
+        <div class="pageBtn">
+            <span class="shuoMing">共<i id="sumpages">X</i>页&nbsp;&nbsp;&nbsp;5条/页</span>
+
+            <div class="changePage">
+                <div class="twoBtn" id="leftBtn">
+                    <img src="./img/left.png" alt="" id="leftStop">
+                </div>
+                
+                <input type="button" class="page" value="1" id="inOne">
+                <div class="twoBtn" id="rightBtn">
+                    <img src="./img/right.png" alt="" id="rightStop">
+                </div>
+            </div>
+            <div class="change-input">
+                到&nbsp;<input type="text" value="1" id="in">&nbsp;页
+                <button onclick="goPage()">go</button>
+            </div>
+        </div>
+        <!-- 修改数据的弹窗 -->
+     <div class="modData">
+            菜名:&nbsp;&nbsp;<input type="text" placeholder="name" id="name" value=""><br>
+            价格:&nbsp;&nbsp;<input type="text" placeholder="price" id="price" value=""><br>
+            描述:&nbsp;&nbsp;<input type="text" placeholder="desc" id="desc" value=""><br>
+            分类:&nbsp;&nbsp;<input type="text" placeholder="typename" id="typename" value=""><br>
+            属性:&nbsp;&nbsp;<input type="text" placeholder="0:面,1:米,2:饮品,3:水果" id="typeid" value=""><br>
+            <input type="text" id="_id" value=""><br>
+            <div class="btn">
+                <button  onclick="confirmModBtn()">修改</button>
+                <button id="cancel" onclick="cancelBtn()">取消</button>
+            </div>
+        </div>
+            <!--添加数据的弹窗 -->
+    <div class="addData">
+        菜名:&nbsp;&nbsp;<input type="text" placeholder="name" id="addname" value=""><br>
+        价格:&nbsp;&nbsp;<input type="text" placeholder="price" id="addprice" value=""><br>
+        描述:&nbsp;&nbsp;<input type="text" placeholder="desc" id="adddesc" value=""><br>
+        分类:&nbsp;&nbsp;<input type="text" placeholder="typename" id="addtypename" value=""><br>
+        属性:&nbsp;&nbsp;<input type="text" placeholder="0:面,1:米,2:饮品,3:水果" id="addtypeid" value=""><br>
+        <input type="text" id="add_id" value=""><br>
+        <div class="btn">
+            <button onclick="confirmAddBtn()">添加</button>
+            <button class="cancel" onclick="cancelBtn()">取消</button>
+        </div>
+    </div>
+    <!-- 查询数据的窗口 -->
+    <div class="searchData">
+        关键词:&nbsp;&nbsp;<input type="text" id="searchContent">
+        <div class="btn">
+            <button onclick="confirmSearchBtn()">查询</button>
+            <button class="cancel" onclick="cancelBtn()">取消</button>
+        </div>
+    </div>
+</div>
+</body>
+<script src="./js/jquery-3.4.1.js"></script>
+<script src="./js/home.js"></script>
+
+</html>

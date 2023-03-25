@@ -1,0 +1,30 @@
+{
+  "id": "3961178",
+  "name": "ajax",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "287162",
+      "name": "注册登录-验证码",
+      "font_class": "zhucedengluyanzhengma",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "11673426",
+      "name": "password",
+      "font_class": "password",
+      "unicode": "e66c",
+      "unicode_decimal": 58988
+    },
+    {
+      "icon_id": "2578488",
+      "name": "登录",
+      "font_class": "denglu",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    }
+  ]
+}
