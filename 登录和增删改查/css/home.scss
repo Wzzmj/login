@@ -1,19 +1,42 @@
 html {
     height: 100%;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f19f73a (second登录和增删改查)
 body {
     height: 100%;
     display: flex;
     align-items: center;
     font-size: 16px;
+<<<<<<< HEAD
  
+=======
+    z-index: 333;
+    background-color: rgb(232, 224, 226);
+
+    #zhezhao {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: #504c4c;
+        opacity: 0.6;
+        z-index: 444;
+        display: none;
+    }
+>>>>>>> f19f73a (second登录和增删改查)
     .menu {
         width: 200px;
         height: 100%;
         background-color: rgb(70, 106, 121);
         color: #fff0d1;
         position: fixed;
+<<<<<<< HEAD
         z-index: 999;
+=======
+        z-index: 111;
+>>>>>>> f19f73a (second登录和增删改查)
         font : {
             family: serif;
             size: 20px;
@@ -25,27 +48,51 @@ body {
             height: 80px;
             position: relative;
             background-color: rgb(70, 106, 121);
+<<<<<<< HEAD
 
             display: flex;
             justify-content: center;
             align-items: center;
 
+=======
+            text-align: center;
+            line-height: 80px;
+>>>>>>> f19f73a (second登录和增删改查)
             cursor: pointer;
         }
         .father:hover {
             background-color: rgb(54, 78, 88);
         }
+<<<<<<< HEAD
+=======
+        .active {
+            background-color: rgb(54, 78, 88);
+        }
+>>>>>>> f19f73a (second登录和增删改查)
 
         .userMe {
             width: 100%;
             height: 80px;
+<<<<<<< HEAD
             .imgMe {
                 width: 60px;
                 height: 60px;
+=======
+            cursor: auto;
+            #imgMe {
+                width: 60px;
+                height: 60px;
+                :hover {
+                    outline: 0;
+                    border: 1px solid rgb(113, 193, 224);
+                    box-shadow: 0px 0px 10px 0px rgb(113, 193, 224);
+                }
+>>>>>>> f19f73a (second登录和增删改查)
                 img {
                     width: 60px;
                     height: 60px;
                     border-radius: 50%;
+<<<<<<< HEAD
                 }
             }
         }
@@ -80,18 +127,34 @@ body {
     }
     .sonMenu:hover {
         display: block;
+=======
+                    cursor: pointer;
+                }
+            }
+        }
+>>>>>>> f19f73a (second登录和增删改查)
     }
     .main {
         width: 100%;
         height: 100%;
         margin-left: 200px;
         background-color: rgb(232, 224, 226);
+<<<<<<< HEAD
 
+=======
+        // display: none;
+>>>>>>> f19f73a (second登录和增删改查)
         table {
             width: 100%;
             height: auto;
             position: relative;
+<<<<<<< HEAD
             border-collapse: collapse;
+=======
+            border-collapse: collapse; //border-collapse是设置表格的行<tr>或<td>之间是否留有距离的样式，
+            //<tr>与<td>之间的距离，在表格里可以通过border="xxx"与 cellspacing="xxx"来实现。
+            //换句话说，当border-collapse设置为collapse时，表格自身的border与cellspacing属性便没有作用了。
+>>>>>>> f19f73a (second登录和增删改查)
         }
         th,
         td {
@@ -117,6 +180,7 @@ body {
         table tbody tr td:first-child {
             color: rgb(54, 78, 88);
         }
+<<<<<<< HEAD
         // table tfoot tr td {
         //     text-align: right;
         //     padding-right: 20px;
@@ -128,6 +192,13 @@ body {
             float: left;
             // z-index: 99999;
             // background-color:pink ;
+=======
+        .func {
+            width: 500px;
+            height: 80px;
+            position: relative;
+            float: left;
+>>>>>>> f19f73a (second登录和增删改查)
             .funcBtn {
                 border: none;
                 width: 100px;
@@ -135,6 +206,7 @@ body {
                 background-color: rgb(232, 224, 226);
                 margin-top: 30px;
                 margin-left: 10px;
+<<<<<<< HEAD
             }
             .delete,.modify{
                 cursor:no-drop;
@@ -143,6 +215,23 @@ body {
                 }
                 a{
                     cursor:no-drop;
+=======
+                font-size: 16px;
+                // :hover{
+                //     color: #1296db;
+                // }
+                #add {
+                    width: 16px;
+                    height: 16px;
+                    position: absolute;
+                    top: 33px;
+                    left: 25px;
+                    display: inline-block;
+                    background-image: url("../img/增加.png");
+                    :hover {
+                        background-image: url("../img/增加1.png");
+                    }
+>>>>>>> f19f73a (second登录和增删改查)
                 }
             }
         }
@@ -155,7 +244,11 @@ body {
             margin-top: 0px;
             .shuoMing {
                 // position: absolute;
+<<<<<<< HEAD
                 width: 30%;
+=======
+                width: 40%;
+>>>>>>> f19f73a (second登录和增删改查)
                 height: 100%;
                 // top: 20px;
                 // left: 20px;
@@ -164,13 +257,36 @@ body {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+<<<<<<< HEAD
+=======
+                button {
+                    width: 70px;
+                    height: 25px;
+                    border: none;
+                    outline: none;
+                    border: 1px solid #dcdfe6;
+                    border-radius: 3px;
+                    background-color: #eee;
+                    cursor: pointer;
+                    font-size: 15px;
+                }
+                button:focus {
+                    outline: 0;
+                    border: 1px solid #5dc5f9;
+                    box-shadow: 0px 0px 10px 0px #5dc5f9;
+                }
+>>>>>>> f19f73a (second登录和增删改查)
             }
             .changePage {
                 width: 80px;
                 height: 20px;
                 position: absolute;
                 top: 15px;
+<<<<<<< HEAD
                 left: 150px;
+=======
+                left: 160px;
+>>>>>>> f19f73a (second登录和增删改查)
                 // background-color: pink;
                 display: flex;
                 justify-content: space-between;
@@ -181,6 +297,16 @@ body {
                     height: 20px;
                     background-color: #eee;
                     border-radius: 3px;
+<<<<<<< HEAD
+=======
+                    :hover {
+                        cursor: pointer;
+                    }
+                    img {
+                        position: absolute;
+                        top: 3px;
+                    }
+>>>>>>> f19f73a (second登录和增删改查)
                 }
                 .page {
                     width: 20px;
@@ -191,17 +317,24 @@ body {
                     border: none;
                     border-radius: 3px;
                 }
+<<<<<<< HEAD
                 img{
                     position: absolute;
                     top: 3px;
                 }
+=======
+>>>>>>> f19f73a (second登录和增删改查)
             }
             .change-input {
                 width: 100px;
                 display: block;
                 position: absolute;
                 left: 260px;
+<<<<<<< HEAD
                 top: 15px;
+=======
+                top: 12px;
+>>>>>>> f19f73a (second登录和增删改查)
                 input {
                     width: 25px;
                     height: 20px;
@@ -212,7 +345,16 @@ body {
                     border-radius: 3px;
                     background-color: #eee;
                 }
+<<<<<<< HEAD
                 button{
+=======
+                input:focus {
+                    outline: 0;
+                    border: 1px solid #5dc5f9;
+                    box-shadow: 0px 0px 10px 0px #5dc5f9;
+                }
+                button {
+>>>>>>> f19f73a (second登录和增删改查)
                     width: 20px;
                     height: 20px;
                     background-color: rgb(54, 78, 88);
@@ -223,6 +365,7 @@ body {
                 }
             }
         }
+<<<<<<< HEAD
         .FatheraddData {
             width: 1423px;
             height: 800px;
@@ -238,6 +381,55 @@ body {
             width: 400px;
             height: 350px;
             z-index: 9999999999;
+=======
+        .Select_bar {
+            width: 70px;
+            height: 110px;
+            background-color: #eee;
+            border: 1px solid #dcdfe6;
+            font-size: 15px;
+            display: block;
+            position: absolute;
+            top: 38px;
+            left: 73px;
+            border-radius: 3px;
+            font-size: 15px;
+            text-align: center;
+            display: none;
+            .bar {
+                width: 100%;
+                height: 100px;
+                margin-top: 5px;
+                cursor: pointer;
+                .Barli {
+                    width: 100%;
+                    height: 25px;
+                }
+                .Barli:hover {
+                    background-color: #d4d1d1;
+                }
+                // .Barli:focus{
+                //     color: #1296db;
+                //     font-weight: 500;
+                // }
+            }
+        }
+        // .FatheraddData {
+        //     width: 1423px;
+        //     height: 800px;
+        //     position: absolute;
+        //     z-index: 9999999999;
+        //     display: flex;
+        //     justify-content: center;
+        //     align-items: center;
+        //     background-color: aquamarine;
+        // }
+        .modData,
+        .addData {
+            width: 400px;
+            height: 350px;
+            z-index: 999;
+>>>>>>> f19f73a (second登录和增删改查)
             background-color: white;
             position: absolute;
             /* 向右、向下移动父盒子的一半 （偏移量） */
@@ -250,7 +442,10 @@ body {
             padding: 20px 50px;
             display: none;
             input {
+<<<<<<< HEAD
                 border: none;
+=======
+>>>>>>> f19f73a (second登录和增删改查)
                 outline: none;
                 border-radius: 2px;
                 border: 1px solid rgb(148, 139, 139);
@@ -259,17 +454,35 @@ body {
                 margin-top: 20px;
                 text-indent: 10px;
             }
+<<<<<<< HEAD
             #_id,#add_id{
                 display: none;
             }
             .btn {
                 width:320px;
+=======
+            input:focus {
+                outline: 0;
+                border: 1px solid #5dc5f9;
+                box-shadow: 0px 0px 10px 0px #5dc5f9;
+            }
+            #_id,
+            #add_id {
+                display: none;
+            }
+            .btn {
+                width: 320px;
+>>>>>>> f19f73a (second登录和增删改查)
                 height: 50px;
                 position: absolute;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+<<<<<<< HEAD
                 margin-top: 30px;
+=======
+                margin-top: 15px;
+>>>>>>> f19f73a (second登录和增删改查)
                 left: 90px;
                 button {
                     width: 100px;
@@ -280,6 +493,7 @@ body {
                     border-radius: 2px;
                     color: white;
                     cursor: pointer;
+<<<<<<< HEAD
                    
                 }
             }
@@ -287,6 +501,15 @@ body {
         .searchData{
             width: 200px;
             height: 200px;
+=======
+                }
+            }
+        }
+        .searchData {
+            width: 200px;
+            height: 200px;
+            z-index: 999;
+>>>>>>> f19f73a (second登录和增删改查)
             background-color: white;
             position: absolute;
             left: 50%;
@@ -295,7 +518,11 @@ body {
             border-radius: 5px;
             padding: 20px 50px;
             display: none;
+<<<<<<< HEAD
             input{
+=======
+            input {
+>>>>>>> f19f73a (second登录和增删改查)
                 outline: none;
                 border-radius: 2px;
                 border: 1px solid rgb(148, 139, 139);
@@ -304,8 +531,18 @@ body {
                 margin-top: 20px;
                 text-indent: 10px;
             }
+<<<<<<< HEAD
             .btn {
                 width:210px;
+=======
+            input:focus {
+                outline: 0;
+                border: 1px solid #5dc5f9;
+                box-shadow: 0px 0px 10px 0px #5dc5f9;
+            }
+            .btn {
+                width: 210px;
+>>>>>>> f19f73a (second登录和增删改查)
                 height: 50px;
                 position: absolute;
                 display: flex;
@@ -314,7 +551,11 @@ body {
                 margin-top: 30px;
                 left: 46px;
                 button {
+<<<<<<< HEAD
                     width:60px;
+=======
+                    width: 60px;
+>>>>>>> f19f73a (second登录和增删改查)
                     height: 30px;
                     background-color: rgb(0, 117, 255);
                     border: none;
@@ -324,7 +565,753 @@ body {
                     cursor: pointer;
                 }
             }
+<<<<<<< HEAD
            
+=======
+        }
+    }
+    .UserInfo {
+        width: 100%;
+        height: 100%;
+        margin-left: 200px;
+        background-color: rgb(232, 224, 226);
+        display: none;
+        .func_users {
+            width: 500px;
+            height: 80px;
+            position: relative;
+            float: left;
+            .funcBtn_users {
+                border: none;
+                width: 100px;
+                height: 15px;
+                background-color: rgb(232, 224, 226);
+                margin-top: 30px;
+                margin-left: 10px;
+                font-size: 16px;
+                :hover {
+                    color: #1296db;
+                }
+            }
+        }
+        table {
+            width: 100%;
+            height: auto;
+            position: relative;
+            border-collapse: collapse; //border-collapse是设置表格的行<tr>或<td>之间是否留有距离的样式，
+            //<tr>与<td>之间的距离，在表格里可以通过border="xxx"与 cellspacing="xxx"来实现。
+            //换句话说，当border-collapse设置为collapse时，表格自身的border与cellspacing属性便没有作用了。
+        }
+        th,
+        td {
+            border-bottom: 1px solid #d0c6c6;
+            text-align: center;
+            padding: 20px 0;
+        }
+        table thead tr {
+            background-color: rgb(248, 248, 249);
+            color: black;
+        }
+        table tbody tr:nth-child(odd) {
+            background-color: #eee;
+        }
+        table tbody tr {
+            a {
+                margin-right: 10px;
+            }
+        }
+        table tbody tr:hover {
+            background-color: #ccc;
+        }
+        table tbody tr td:first-child {
+            color: rgb(54, 78, 88);
+        }
+        .pageBtn_users {
+            width: 400px;
+            height: 50px;
+            // background-color: aquamarine;
+            position: relative;
+            float: right;
+            margin-top: 0px;
+            .shuoMing_users {
+                // position: absolute;
+                width: 40%;
+                height: 100%;
+                // top: 20px;
+                // left: 20px;
+                // display: inline-block;
+                // background-color: rgb(168, 26, 26);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                button {
+                    width: 70px;
+                    height: 25px;
+                    border: none;
+                    outline: none;
+                    border: 1px solid #dcdfe6;
+                    border-radius: 3px;
+                    background-color: #eee;
+                    cursor: pointer;
+                    font-size: 15px;
+                }
+                button:focus {
+                    outline: 0;
+                    border: 1px solid #5dc5f9;
+                    box-shadow: 0px 0px 10px 0px #5dc5f9;
+                }
+            }
+            .changePage_users {
+                width: 80px;
+                height: 20px;
+                position: absolute;
+                top: 15px;
+                left: 160px;
+                // background-color: pink;
+                display: flex;
+                justify-content: space-between;
+                // align-items: center;
+
+                .twoBtn_users {
+                    width: 20px;
+                    height: 20px;
+                    background-color: #eee;
+                    border-radius: 3px;
+                    :hover {
+                        cursor: pointer;
+                    }
+                    img {
+                        position: absolute;
+                        top: 3px;
+                    }
+                }
+                .page_users {
+                    width: 20px;
+                    height: 20px;
+                    background-color: rgb(54, 78, 88);
+                    color: rgb(255, 255, 255);
+                    text-align: center;
+                    border: none;
+                    border-radius: 3px;
+                }
+            }
+            .change-input_users {
+                width: 100px;
+                display: block;
+                position: absolute;
+                left: 260px;
+                top: 12px;
+                input {
+                    width: 25px;
+                    height: 20px;
+                    border: none;
+                    outline: none;
+                    text-indent: 8px;
+                    border: 1px solid #dcdfe6;
+                    border-radius: 3px;
+                    background-color: #eee;
+                }
+                input:focus {
+                    outline: 0;
+                    border: 1px solid #5dc5f9;
+                    box-shadow: 0px 0px 10px 0px #5dc5f9;
+                }
+                button {
+                    width: 20px;
+                    height: 20px;
+                    background-color: rgb(54, 78, 88);
+                    color: rgb(255, 255, 255);
+                    text-align: center;
+                    border: none;
+                    border-radius: 3px;
+                }
+            }
+        }
+        .Select_bar_users {
+            width: 70px;
+            height: 110px;
+            background-color: #eee;
+            border: 1px solid #dcdfe6;
+            font-size: 15px;
+            display: block;
+            position: absolute;
+            top: 38px;
+            left: 73px;
+            border-radius: 3px;
+            font-size: 15px;
+            text-align: center;
+            display: none;
+            .bar_users {
+                width: 100%;
+                height: 100px;
+                margin-top: 5px;
+                cursor: pointer;
+                .Barli_users {
+                    width: 100%;
+                    height: 25px;
+                }
+                .Barli_users:hover {
+                    background-color: #d4d1d1;
+                }
+                // .Barli:focus{
+                //     color: #1296db;
+                //     font-weight: 500;
+                // }
+            }
+        }
+        .searchData_users {
+            width: 200px;
+            height: 200px;
+            z-index: 999;
+            background-color: white;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 5px;
+            padding: 20px 50px;
+            display: none;
+            input {
+                outline: none;
+                border-radius: 2px;
+                border: 1px solid rgb(148, 139, 139);
+                width: 200px;
+                height: 30px;
+                margin-top: 20px;
+                text-indent: 10px;
+            }
+            input:focus {
+                outline: 0;
+                border: 1px solid #5dc5f9;
+                box-shadow: 0px 0px 10px 0px #5dc5f9;
+            }
+            .btn_users {
+                width: 210px;
+                height: 50px;
+                position: absolute;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 30px;
+                left: 46px;
+                button {
+                    width: 60px;
+                    height: 30px;
+                    background-color: rgb(0, 117, 255);
+                    border: none;
+                    outline: none;
+                    border-radius: 2px;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+        .modData_users {
+            width: 370px;
+            height: 300px;
+            z-index: 999;
+            background-color: white;
+            position: absolute;
+            /* 向右、向下移动父盒子的一半 （偏移量） */
+            left: 50%;
+            top: 50%;
+            /* translate若使用百分比，是相对于自身的比例的位移 */
+            transform: translate(-50%, -50%);
+            outline: none;
+            border-radius: 5px;
+            padding: 20px 35px;
+            display: none;
+            input {
+                outline: none;
+                border-radius: 2px;
+                border: 1px solid rgb(148, 139, 139);
+                width: 300px;
+                height: 30px;
+                margin-top: 30px;
+                text-indent: 10px;
+            }
+            input:focus {
+                outline: 0;
+                border: 1px solid #5dc5f9;
+                box-shadow: 0px 0px 10px 0px #5dc5f9;
+            }
+            #_id_users {
+                display: none;
+            }
+            .btn_users {
+                width: 320px;
+                height: 50px;
+                position: absolute;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 15px;
+                left: 66px;
+                button {
+                    width: 100px;
+                    height: 50px;
+                    background-color: rgb(0, 117, 255);
+                    border: none;
+                    outline: none;
+                    border-radius: 2px;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .MyInfob {
+        width: 100%;
+        height: 100%;
+        // margin-left: 200px;
+        background-color: rgb(232, 224, 226);
+        display: none;
+        text-align: center;
+        .showInfo_card {
+            width: 50%;
+            height: 662px;
+            background-color: rgb(232, 224, 226);
+            top: 20px;
+            left: 400px;
+            border-radius: 2px;
+            position: absolute;
+            border: 1px solid rgb(98, 96, 96);
+            /* 阴影向右偏移5px、向下偏移5px、模糊距离为5px、阴影尺寸为5px、颜色*/
+            box-shadow: 5px 5px 5px 5px rgb(151, 149, 150);
+
+            .smallTitle {
+                width: 100%;
+                height: 100px;
+                // background-color: #1296db;
+                border-bottom: 2px solid #9b9797;
+                color: rgb(255, 255, 255);
+                font-size: 25px;
+                font-weight: bold;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                background-color: rgb(93, 120, 131);
+            }
+            .basicInfo {
+                width: 100%;
+                height: 560px;
+                // background-color: pink;
+                table {
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+                    border-collapse: collapse; //border-collapse是设置表格的行<tr>或<td>之间是否留有距离的样式，
+                    //<tr>与<td>之间的距离，在表格里可以通过border="xxx"与 cellspacing="xxx"来实现。
+                    //换句话说，当border-collapse设置为collapse时，表格自身的border与cellspacing属性便没有作用了。
+                }
+                th,
+                td {
+                    border-bottom: 1px solid #d0c6c6;
+                    text-align: center;
+                    padding: 20px 0;
+                }
+                // table thead tr {
+                //     background-color: rgb(248, 248, 249);
+                //     color: black;
+                // }
+                table tbody tr:nth-child(odd) {
+                    background-color: #eee;
+                }
+                table tbody tr {
+                    a {
+                        margin-right: 10px;
+                    }
+                }
+                table tbody tr:hover {
+                    background-color: #ccc;
+                }
+                // table tbody tr td:first-child {
+                //     color: rgb(54, 78, 88);
+                // }
+            }
+        }
+        .modMyInfo {
+            width: 43%;
+            height: 660px;
+            background-color: rgb(232, 224, 226);
+            position: absolute;
+            right: 30px;
+            top: 20px;
+            border-radius: 2px;
+            border: 1px solid rgb(98, 96, 96);
+            /* 阴影向右偏移5px、向下偏移5px、模糊距离为5px、阴影尺寸为5px、颜色*/
+            box-shadow: 5px 5px 5px 5px rgb(151, 149, 150);
+            .smalltitle_mod {
+                width: 100%;
+                height: 100px;
+                // background-color: #1296db;
+                border-bottom: 2px solid #9b9797;
+                color: rgb(99, 101, 100);
+                font-size: 25px;
+                font-weight: bold;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+            }
+            .MyInfo_mod {
+                width: 100%;
+                height: 350px;
+                // background-color: white;
+                border-radius: 5px;
+                padding: 50px 20px;
+                input {
+                    outline: none;
+                    border-radius: 2px;
+                    border: 1px solid rgb(148, 139, 139);
+                    width: 70%;
+                    height: 50px;
+                    margin-top: 20px;
+                    text-indent: 10px;
+                    background-color: #eee;
+                }
+                input:focus {
+                    outline: 0;
+                    border: 1px solid #5dc5f9;
+                    box-shadow: 0px 0px 10px 0px #5dc5f9;
+                }
+                #_idMyInfo_mod {
+                    display: none;
+                }
+            }
+            .btnMyInfo_mod {
+                width: 60%;
+                height: 50px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                // margin-top: -45px;
+                margin-left: 180px;
+                button {
+                    width: 100px;
+                    height: 50px;
+                    background-color: rgb(94, 127, 141);
+                    border: none;
+                    outline: none;
+                    border-radius: 2px;
+                    color: white;
+                    cursor: pointer;
+                }
+                #redbtn {
+                    background-color: rgb(164, 79, 79);
+                }
+            }
+        }
+    }
+    .order {
+        width: 100%;
+        height: 100%;
+        margin-left: 200px;
+        background-color: rgb(232, 224, 226);
+        display: none;
+        .func_order {
+            width: 500px;
+            height: 80px;
+            position: relative;
+            float: left;
+            .funcBtn_order {
+                border: none;
+                width: 100px;
+                height: 15px;
+                background-color: rgb(232, 224, 226);
+                margin-top: 30px;
+                margin-left: 10px;
+                font-size: 16px;
+                :hover {
+                    color: #1296db;
+                }
+            }
+        }
+        table {
+            width: 100%;
+            height: auto;
+            position: relative;
+            border-collapse: collapse; //border-collapse是设置表格的行<tr>或<td>之间是否留有距离的样式，
+            //<tr>与<td>之间的距离，在表格里可以通过border="xxx"与 cellspacing="xxx"来实现。
+            //换句话说，当border-collapse设置为collapse时，表格自身的border与cellspacing属性便没有作用了。
+        }
+        th,
+        td {
+            border-bottom: 1px solid #d0c6c6;
+            text-align: center;
+            padding: 20px 0;
+        }
+        table thead tr {
+            background-color: rgb(248, 248, 249);
+            color: black;
+        }
+        table tbody tr:nth-child(odd) {
+            background-color: #eee;
+        }
+        table tbody tr {
+            a {
+                margin-right: 10px;
+            }
+        }
+        table tbody tr:hover {
+            background-color: #ccc;
+        }
+        table tbody tr td:first-child {
+            color: rgb(54, 78, 88);
+        }
+        .pageBtn_order {
+            width: 400px;
+            height: 50px;
+            // background-color: aquamarine;
+            position: relative;
+            float: right;
+            margin-top: 0px;
+            .shuoMing_order {
+                // position: absolute;
+                width: 40%;
+                height: 100%;
+                // top: 20px;
+                // left: 20px;
+                // display: inline-block;
+                // background-color: rgb(168, 26, 26);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                button {
+                    width: 70px;
+                    height: 25px;
+                    border: none;
+                    outline: none;
+                    border: 1px solid #dcdfe6;
+                    border-radius: 3px;
+                    background-color: #eee;
+                    cursor: pointer;
+                    font-size: 15px;
+                }
+                button:focus {
+                    outline: 0;
+                    border: 1px solid #5dc5f9;
+                    box-shadow: 0px 0px 10px 0px #5dc5f9;
+                }
+            }
+            .changePage_order {
+                width: 80px;
+                height: 20px;
+                position: absolute;
+                top: 15px;
+                left: 160px;
+                // background-color: pink;
+                display: flex;
+                justify-content: space-between;
+                // align-items: center;
+
+                .twoBtn_order {
+                    width: 20px;
+                    height: 20px;
+                    background-color: #eee;
+                    border-radius: 3px;
+                    :hover {
+                        cursor: pointer;
+                    }
+                    img {
+                        position: absolute;
+                        top: 3px;
+                    }
+                }
+                .page_order {
+                    width: 20px;
+                    height: 20px;
+                    background-color: rgb(54, 78, 88);
+                    color: rgb(255, 255, 255);
+                    text-align: center;
+                    border: none;
+                    border-radius: 3px;
+                }
+            }
+            .change-input_order {
+                width: 100px;
+                display: block;
+                position: absolute;
+                left: 260px;
+                top: 12px;
+                input {
+                    width: 25px;
+                    height: 20px;
+                    border: none;
+                    outline: none;
+                    text-indent: 8px;
+                    border: 1px solid #dcdfe6;
+                    border-radius: 3px;
+                    background-color: #eee;
+                }
+                input:focus {
+                    outline: 0;
+                    border: 1px solid #5dc5f9;
+                    box-shadow: 0px 0px 10px 0px #5dc5f9;
+                }
+                button {
+                    width: 20px;
+                    height: 20px;
+                    background-color: rgb(54, 78, 88);
+                    color: rgb(255, 255, 255);
+                    text-align: center;
+                    border: none;
+                    border-radius: 3px;
+                }
+            }
+        }
+        .Select_bar_order {
+            width: 70px;
+            height: 110px;
+            background-color: #eee;
+            border: 1px solid #dcdfe6;
+            font-size: 15px;
+            display: block;
+            position: absolute;
+            top: 38px;
+            left: 73px;
+            border-radius: 3px;
+            font-size: 15px;
+            text-align: center;
+            display: none;
+            .bar_order {
+                width: 100%;
+                height: 100px;
+                margin-top: 5px;
+                cursor: pointer;
+                .Barli_order {
+                    width: 100%;
+                    height: 25px;
+                }
+                .Barli_order:hover {
+                    background-color: #d4d1d1;
+                }
+            }
+        }
+        .searchData_order {
+            width: 200px;
+            height: 200px;
+            z-index: 999;
+            background-color: white;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 5px;
+            padding: 20px 50px;
+            display: none;
+            input {
+                outline: none;
+                border-radius: 2px;
+                border: 1px solid rgb(148, 139, 139);
+                width: 200px;
+                height: 30px;
+                margin-top: 20px;
+                text-indent: 10px;
+            }
+            input:focus {
+                outline: 0;
+                border: 1px solid #5dc5f9;
+                box-shadow: 0px 0px 10px 0px #5dc5f9;
+            }
+            .btn_order {
+                width: 210px;
+                height: 50px;
+                position: absolute;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 30px;
+                left: 46px;
+                button {
+                    width: 60px;
+                    height: 30px;
+                    background-color: rgb(0, 117, 255);
+                    border: none;
+                    outline: none;
+                    border-radius: 2px;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+        .modData_order,.addData_order {
+            width: 410px;
+            height: 350px;
+            z-index: 999;
+            background-color: white;
+            position: absolute;
+            /* 向右、向下移动父盒子的一半 （偏移量） */
+            left: 50%;
+            top: 50%;
+            /* translate若使用百分比，是相对于自身的比例的位移 */
+            transform: translate(-50%, -50%);
+            outline: none;
+            border-radius: 5px;
+            padding: 20px 35px;
+            display: none;
+            input {
+                outline: none;
+                border-radius: 2px;
+                border: 1px solid rgb(148, 139, 139);
+                width: 300px;
+                height: 30px;
+                margin-top: 30px;
+                text-indent: 10px;
+            }
+            input:focus {
+                outline: 0;
+                border: 1px solid #5dc5f9;
+                box-shadow: 0px 0px 10px 0px #5dc5f9;
+            }
+            #_id_order {
+                display: none;
+            }
+            #add_id_order {
+                display: none;
+            }
+            .btn_order {
+                width: 320px;
+                height: 50px;
+                position: absolute;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 15px;
+                left: 66px;
+                button {
+                    width: 100px;
+                    height: 50px;
+                    background-color: rgb(0, 117, 255);
+                    border: none;
+                    outline: none;
+                    border-radius: 2px;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .tabcontent {
+        -webkit-animation: fadeEffect 1s;
+        animation: fadeEffect 1s;
+    }
+    /* Fade in tabs */
+    @-webkit-keyframes fadeEffect {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeEffect {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+>>>>>>> f19f73a (second登录和增删改查)
         }
     }
 }

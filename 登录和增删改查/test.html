@@ -1,0 +1,88 @@
+<!-- <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+   <form>
+        <h3>Log in</h3>
+        <input type="text" name="user" placeholder="user" id="user">
+        <input type="password" name="pass" placeholder="password" id="pass">
+        <input type="checkbox" id="remember" checked><br/><br/>
+        <input type="button" value="登录" id="sub" onclick="loginBtn_click()">
+    </form>
+<script type="text/javascript">
+    $(document).ready(function(){
+        var strName = localStorage.getItem('UserName');
+        var strPass = localStorage.getItem('UserPass');
+        if(strName){
+            $('#user').val(strName);
+        }if(strPass){
+            $('#pass').val(strPass);
+        }
+
+    });
+
+    function loginBtn_click(){
+        debugger
+            var strName = $('#user').val();
+            var strPass = $('#pass').val();
+            localStorage.setItem('UserName',strName);
+            if($('#remember').is(':checked')){
+                localStorage.setItem('UserPass',strPass);
+            }else{
+                localStorage.removeItem('UserPass');
+            }
+            window.location.reload();
+        }
+</script> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{margin: 0;padding: 0;}
+        ul,li{list-style: none;}
+        body{min-height: 1000px}
+        .app{background: rgba(9,9,9,.1);width:200px;margin: 20px auto;text-align: center;padding: 10px;border-radius: 6px;}
+        button{cursor: pointer;}
+    </style>
+    <div class="app">
+        <button>点击切换</button>
+        <ul>
+            <li>内容1</li>
+            <li>内容2</li>
+            <li>内容3</li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        //获取相应的dom元素 
+        var app=document.querySelector('.app');
+        var button=document.querySelector('button');
+        var ul=document.querySelector('ul');
+        // 第一步 点击按钮 切换 ul的状态
+        button.addEventListener('click',function(){
+            console.log(ul.style.display)
+            if(ul.style.display=='none'||!ul.style.display){
+                ul.style.display='block'
+            }else{
+                ul.style.display='none'
+            }
+        })
+        // 第二步：点击网页隐藏 ul
+        document.addEventListener('click',function(){
+            ul.style.display='none'
+        })
+        // 第三步：点击网页会隐藏ul，但是点击按钮不会显示ul，因为事件冒泡的原因，点击按钮也会触发document的点击事件，
+        // 这里需要用到阻止事件冒泡，使得点击app元素内的区域不会触发外层的点击事件
+        app.addEventListener('click',function(event){
+            var e=event||window.event;
+            if(e.cancelBubble){
+                e.cancelBubble=true;//ie 阻止事件冒泡
+            }else{
+                e.stopPropagation();// 其余浏览器 阻止事件冒泡
+            }
+        })
+    </script>
+</body>
+</html>

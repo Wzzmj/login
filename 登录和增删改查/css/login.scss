@@ -1,14 +1,21 @@
+<<<<<<< HEAD
 $mycolor: white;
 $myFontSize: 20px;
 
 
+=======
+>>>>>>> f19f73a (second登录和增删改查)
 html {
     height: 100%;
 }
 body {
     height: 100%;
     display: block;
+<<<<<<< HEAD
     .login {
+=======
+    .loginwhole {
+>>>>>>> f19f73a (second登录和增删改查)
         background-image: url("../img/login.jpg");
         background-size: cover;
         width: 100%;
@@ -17,15 +24,23 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
+<<<<<<< HEAD
         .loging {
             width: 340px;
             height: 350px;
             background-color: $mycolor;
+=======
+        .login {
+            width: 340px;
+            height: 400px;
+            background-color: white;
+>>>>>>> f19f73a (second登录和增删改查)
             border-radius: 10px;
             padding: 0 30px;
             color: #606266;
             font-size: 13px;
             .title {
+<<<<<<< HEAD
                 font: {
                     size: $myFontSize;
                     weight: 500;
@@ -62,16 +77,96 @@ body {
                     .iconfont {
                         position: absolute;
                         margin: 10px 10px;
+=======
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: dimgrey;
+                :hover {
+                    color: #1296db;
+                }
+                line-height: 1.1;
+                .loginTitle {
+                    color: #1296db;
+                    font: {
+                        size: 24px;
+                        weight: 500;
+                    }
+                }
+                margin-top: 20px;
+                span {
+                    display: block;
+                    cursor: pointer;
+                }
+            }
+            .input_login {
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                margin-top: 50px;
+                height: 40px;
+                // border: 1px solid #e1e1e1;
+                cursor: default;
+                #imguser_login,
+                #imgpassword_login {
+                    display: inline-block;
+                    width: 40px;
+                    height: 100%;
+                    position: absolute;
+                    z-index: 33;
+                    // background-color: red;
+                    img {
+                        position: absolute;
+                        margin: 10px 10px;
+                        top: 3px;
+                    }
+                }
+                #eye_login {
+                    display: inline-block;
+                    width: 40px;
+                    height: 100%;
+                    position: absolute;
+                    z-index: 33;
+                    left: 292px;
+                    cursor: pointer;
+                    img {
+                        position: absolute;
+                        margin: 10px 10px;
+                        top: 3px;
+>>>>>>> f19f73a (second登录和增删改查)
                     }
                 }
                 .offBorder {
                     position: absolute;
+<<<<<<< HEAD
                     width: 88%;
                     height: 100%;
                     border: none;
                     outline: none;
                 }
       
+=======
+                    width: 87%;
+                    height: 100%;
+                    border: none;
+                    border: 1px solid #e1e1e1;
+                    // outline: 1px solid blue;
+                    border-radius: 4px;
+                }
+                input {
+                    padding-left: 35px;
+                }
+                // input:focus {
+                //     outline: 0;
+                //     border: 1px solid #f95d5d;
+                //     box-shadow: 0px 0px 10px 0px #f95d5d;
+                // }
+                input:focus {
+                    outline: 0;
+                    border: 1px solid #e1e1e1;
+                    box-shadow: 0px 0px 10px 0px #5dc5f9;
+                }
+>>>>>>> f19f73a (second登录和增删改查)
             }
 
             //记住密码部分
@@ -80,7 +175,11 @@ body {
                 height: 40px;
                 line-height: 66px;
                 position: relative;
+<<<<<<< HEAD
 
+=======
+                margin-top: 20px;
+>>>>>>> f19f73a (second登录和增删改查)
                 label {
                     position: relative;
                     top: -2px;
@@ -88,7 +187,11 @@ body {
                     #rem {
                         border-radius: 4px;
                         display: inline-block;
+<<<<<<< HEAD
                         margin-top: 35px;
+=======
+
+>>>>>>> f19f73a (second登录和增删改查)
                         border: 1px solid #dcdfe6;
                         cursor: pointer;
                         // #rem:hover {
@@ -99,10 +202,16 @@ body {
                     }
                 }
             }
+<<<<<<< HEAD
             #fail{
                 width: 200px;
                 height: 30px;
                
+=======
+            #fail_login {
+                width: 200px;
+                height: 30px;
+>>>>>>> f19f73a (second登录和增删改查)
                 position: relative;
                 // background-color: #af7b7b;
                 color: red;
@@ -113,6 +222,7 @@ body {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+<<<<<<< HEAD
 
                 .reg,
                 .log {
@@ -120,6 +230,13 @@ body {
                     height: 50px;
                     background-color: rgb(0, 117, 255);
                     margin-top: 17px;
+=======
+                .log {
+                    width: 100%;
+                    height: 50px;
+                    background-color: rgb(0, 117, 255);
+                    margin-top: 31px;
+>>>>>>> f19f73a (second登录和增删改查)
                     color: #ffffff;
                     outline: none;
                     border: none;
@@ -127,11 +244,180 @@ body {
                     z-index: 11;
                     cursor: pointer;
                 }
+<<<<<<< HEAD
                 .loginText{
                     display: block;
                     text-align: center;
                     margin-top:12% ;
                    
+=======
+            }
+        }
+        .register {
+            width: 340px;
+            height: 400px;
+            background-color: white;
+            border-radius: 10px;
+            padding: 0 30px;
+            color: #606266;
+            font-size: 13px;
+            display: none;
+            .title {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: dimgrey;
+                :hover {
+                    color: #1296db;
+                }
+                line-height: 1.1;
+                .registerTitle {
+                    color: #1296db;
+                    font: {
+                        size: 24px;
+                        weight: 500;
+                    }
+                }
+                margin-top: 20px;
+                span {
+                    display: block;
+                    cursor: pointer;
+                }
+            }
+            .input_register {
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                margin-top: 20px;
+                height: 40px;
+                // border: 1px solid #e1e1e1;
+                cursor: default;
+                #imguser_register,
+                #imgmail_register,
+                #imgpassword_register,
+                #imgsafe_register {
+                    display: inline-block;
+                    width: 40px;
+                    height: 100%;
+                    position: absolute;
+                    z-index: 33;
+                    // background-color: red;
+                    img {
+                        position: absolute;
+                        margin: 10px 10px;
+                        top: 3px;
+                    }
+                }
+                #usercode_register_check {
+                    display: block;
+                    position: absolute;
+                    top: 45px;
+                    width: 150px;
+                    height: 20px;
+                    color: red;
+                    font-size: 12px;
+                    display: none;
+                }
+                #passwordcode_register_check {
+                    display: block;
+                    position: absolute;
+                    top: 45px;
+                    width: 150px;
+                    height: 20px;
+                    color: red;
+                    font-size: 12px;
+                    display: none;
+                }
+                #mailcode_register_check {
+                    display: block;
+                    position: absolute;
+                    top: 45px;
+                    width: 150px;
+                    height: 20px;
+                    color: red;
+                    font-size: 12px;
+                    display: none;
+                }
+                #eye_register {
+                    display: inline-block;
+                    width: 40px;
+                    height: 100%;
+                    position: absolute;
+                    z-index: 33;
+                    left: 292px;
+                    cursor: pointer;
+                    img {
+                        position: absolute;
+                        margin: 10px 10px;
+                        top: 3px;
+                    }
+                }
+                .offBorder {
+                    position: absolute;
+                    width: 87%;
+                    height: 100%;
+                    border: none;
+                    border: 1px solid #e1e1e1;
+                    // outline: 1px solid blue;
+                    border-radius: 4px;
+                }
+                input {
+                    padding-left: 35px;
+                }
+                // input:focus {
+                //     outline: 0;
+                //     border: 1px solid #f95d5d;
+                //     box-shadow: 0px 0px 10px 0px #f95d5d;
+                // }
+                input:focus {
+                    outline: 0;
+                    border: 1px solid #e1e1e1;
+                    box-shadow: 0px 0px 10px 0px #5dc5f9;
+                }
+            }
+            .safecode_half {
+                width: 50%;
+                // z-index: 999;
+            }
+            #sendcode_register {
+                width: 135px;
+                height: 40px;
+                position: absolute;
+                left: 200px;
+                background-color: #67b7e5;
+                border: none;
+                color: white;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            #fail_sendcode {
+                display: block;
+                position: absolute;
+                left: 200px;
+                top: 40px;
+                // background-color: pink;
+                width: 150px;
+                height: 20px;
+                color: red;
+                // display: none;
+            }
+            //注册按钮部分
+            .btn {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .reg {
+                    width: 100%;
+                    height: 50px;
+                    background-color: rgb(0, 117, 255);
+                    margin-top: 25px;
+                    color: #ffffff;
+                    outline: none;
+                    border: none;
+                    border-radius: 6px;
+                    z-index: 11;
+                    cursor: pointer;
+>>>>>>> f19f73a (second登录和增删改查)
                 }
             }
         }

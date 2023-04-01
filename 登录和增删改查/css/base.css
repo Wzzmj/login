@@ -31,8 +31,16 @@ img {
 a {
     text-decoration: none;
     color:rgb(70, 106, 121);
+<<<<<<< HEAD
 }
 
+=======
+    
+}
+a:hover{
+    color: #1296db;
+}
+>>>>>>> f19f73a (second登录和增删改查)
 /* 行内块 */
 
 div {

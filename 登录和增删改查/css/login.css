@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 @charset "UTF-8";
+=======
+>>>>>>> f19f73a (second登录和增删改查)
 html {
   height: 100%;
 }
@@ -8,7 +11,11 @@ body {
   display: block;
 }
 
+<<<<<<< HEAD
 body .login {
+=======
+body .loginwhole {
+>>>>>>> f19f73a (second登录和增删改查)
   background-image: url("../img/login.jpg");
   background-size: cover;
   width: 100%;
@@ -19,9 +26,15 @@ body .login {
   justify-content: center;
 }
 
+<<<<<<< HEAD
 body .login .loging {
   width: 340px;
   height: 350px;
+=======
+body .loginwhole .login {
+  width: 340px;
+  height: 400px;
+>>>>>>> f19f73a (second登录和增删改查)
   background-color: white;
   border-radius: 10px;
   padding: 0 30px;
@@ -29,15 +42,23 @@ body .login .loging {
   font-size: 13px;
 }
 
+<<<<<<< HEAD
 body .login .loging .title {
   font-size: 20px;
   font-weight: 500;
   text-align: center;
+=======
+body .loginwhole .login .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+>>>>>>> f19f73a (second登录和增删改查)
   color: dimgrey;
   line-height: 1.1;
   margin-top: 20px;
 }
 
+<<<<<<< HEAD
 body .login .loging .input__inner {
   /* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
   position: relative;
@@ -81,27 +102,122 @@ body .login .loging .input__inner .offBorder {
 }
 
 body .login .loging .remDiv {
+=======
+body .loginwhole .login .title :hover {
+  color: #1296db;
+}
+
+body .loginwhole .login .title .loginTitle {
+  color: #1296db;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+body .loginwhole .login .title span {
+  display: block;
+  cursor: pointer;
+}
+
+body .loginwhole .login .input_login {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-top: 50px;
+  height: 40px;
+  cursor: default;
+}
+
+body .loginwhole .login .input_login #imguser_login,
+body .loginwhole .login .input_login #imgpassword_login {
+  display: inline-block;
+  width: 40px;
+  height: 100%;
+  position: absolute;
+  z-index: 33;
+}
+
+body .loginwhole .login .input_login #imguser_login img,
+body .loginwhole .login .input_login #imgpassword_login img {
+  position: absolute;
+  margin: 10px 10px;
+  top: 3px;
+}
+
+body .loginwhole .login .input_login #eye_login {
+  display: inline-block;
+  width: 40px;
+  height: 100%;
+  position: absolute;
+  z-index: 33;
+  left: 292px;
+  cursor: pointer;
+}
+
+body .loginwhole .login .input_login #eye_login img {
+  position: absolute;
+  margin: 10px 10px;
+  top: 3px;
+}
+
+body .loginwhole .login .input_login .offBorder {
+  position: absolute;
+  width: 87%;
+  height: 100%;
+  border: none;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+}
+
+body .loginwhole .login .input_login input {
+  padding-left: 35px;
+}
+
+body .loginwhole .login .input_login input:focus {
+  outline: 0;
+  border: 1px solid #e1e1e1;
+  box-shadow: 0px 0px 10px 0px #5dc5f9;
+}
+
+body .loginwhole .login .remDiv {
+>>>>>>> f19f73a (second登录和增删改查)
   width: auto;
   height: 40px;
   line-height: 66px;
   position: relative;
+<<<<<<< HEAD
 }
 
 body .login .loging .remDiv label {
+=======
+  margin-top: 20px;
+}
+
+body .loginwhole .login .remDiv label {
+>>>>>>> f19f73a (second登录和增删改查)
   position: relative;
   top: -2px;
   cursor: pointer;
 }
 
+<<<<<<< HEAD
 body .login .loging .remDiv label #rem {
   border-radius: 4px;
   display: inline-block;
   margin-top: 35px;
+=======
+body .loginwhole .login .remDiv label #rem {
+  border-radius: 4px;
+  display: inline-block;
+>>>>>>> f19f73a (second登录和增删改查)
   border: 1px solid #dcdfe6;
   cursor: pointer;
 }
 
+<<<<<<< HEAD
 body .login .loging #fail {
+=======
+body .loginwhole .login #fail_login {
+>>>>>>> f19f73a (second登录和增删改查)
   width: 200px;
   height: 30px;
   position: relative;
@@ -109,18 +225,30 @@ body .login .loging #fail {
   left: 132px;
 }
 
+<<<<<<< HEAD
 body .login .loging .btn {
+=======
+body .loginwhole .login .btn {
+>>>>>>> f19f73a (second登录和增删改查)
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+<<<<<<< HEAD
 body .login .loging .btn .reg,
 body .login .loging .btn .log {
   width: 37%;
   height: 50px;
   background-color: #0075ff;
   margin-top: 17px;
+=======
+body .loginwhole .login .btn .log {
+  width: 100%;
+  height: 50px;
+  background-color: #0075ff;
+  margin-top: 31px;
+>>>>>>> f19f73a (second登录和增删改查)
   color: #ffffff;
   outline: none;
   border: none;
@@ -129,8 +257,186 @@ body .login .loging .btn .log {
   cursor: pointer;
 }
 
+<<<<<<< HEAD
 body .login .loging .btn .loginText {
   display: block;
   text-align: center;
   margin-top: 12%;
+=======
+body .loginwhole .register {
+  width: 340px;
+  height: 400px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 0 30px;
+  color: #606266;
+  font-size: 13px;
+  display: none;
+}
+
+body .loginwhole .register .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: dimgrey;
+  line-height: 1.1;
+  margin-top: 20px;
+}
+
+body .loginwhole .register .title :hover {
+  color: #1296db;
+}
+
+body .loginwhole .register .title .registerTitle {
+  color: #1296db;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+body .loginwhole .register .title span {
+  display: block;
+  cursor: pointer;
+}
+
+body .loginwhole .register .input_register {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-top: 20px;
+  height: 40px;
+  cursor: default;
+}
+
+body .loginwhole .register .input_register #imguser_register,
+body .loginwhole .register .input_register #imgmail_register,
+body .loginwhole .register .input_register #imgpassword_register,
+body .loginwhole .register .input_register #imgsafe_register {
+  display: inline-block;
+  width: 40px;
+  height: 100%;
+  position: absolute;
+  z-index: 33;
+}
+
+body .loginwhole .register .input_register #imguser_register img,
+body .loginwhole .register .input_register #imgmail_register img,
+body .loginwhole .register .input_register #imgpassword_register img,
+body .loginwhole .register .input_register #imgsafe_register img {
+  position: absolute;
+  margin: 10px 10px;
+  top: 3px;
+}
+
+body .loginwhole .register .input_register #usercode_register_check {
+  display: block;
+  position: absolute;
+  top: 45px;
+  width: 150px;
+  height: 20px;
+  color: red;
+  font-size: 12px;
+  display: none;
+}
+
+body .loginwhole .register .input_register #passwordcode_register_check {
+  display: block;
+  position: absolute;
+  top: 45px;
+  width: 150px;
+  height: 20px;
+  color: red;
+  font-size: 12px;
+  display: none;
+}
+
+body .loginwhole .register .input_register #mailcode_register_check {
+  display: block;
+  position: absolute;
+  top: 45px;
+  width: 150px;
+  height: 20px;
+  color: red;
+  font-size: 12px;
+  display: none;
+}
+
+body .loginwhole .register .input_register #eye_register {
+  display: inline-block;
+  width: 40px;
+  height: 100%;
+  position: absolute;
+  z-index: 33;
+  left: 292px;
+  cursor: pointer;
+}
+
+body .loginwhole .register .input_register #eye_register img {
+  position: absolute;
+  margin: 10px 10px;
+  top: 3px;
+}
+
+body .loginwhole .register .input_register .offBorder {
+  position: absolute;
+  width: 87%;
+  height: 100%;
+  border: none;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+}
+
+body .loginwhole .register .input_register input {
+  padding-left: 35px;
+}
+
+body .loginwhole .register .input_register input:focus {
+  outline: 0;
+  border: 1px solid #e1e1e1;
+  box-shadow: 0px 0px 10px 0px #5dc5f9;
+}
+
+body .loginwhole .register .safecode_half {
+  width: 50%;
+}
+
+body .loginwhole .register #sendcode_register {
+  width: 135px;
+  height: 40px;
+  position: absolute;
+  left: 200px;
+  background-color: #67b7e5;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+body .loginwhole .register #fail_sendcode {
+  display: block;
+  position: absolute;
+  left: 200px;
+  top: 40px;
+  width: 150px;
+  height: 20px;
+  color: red;
+}
+
+body .loginwhole .register .btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body .loginwhole .register .btn .reg {
+  width: 100%;
+  height: 50px;
+  background-color: #0075ff;
+  margin-top: 25px;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  z-index: 11;
+  cursor: pointer;
+>>>>>>> f19f73a (second登录和增删改查)
 }

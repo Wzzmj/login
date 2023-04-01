@@ -16,6 +16,7 @@
     <div class="menu">
         <ul>
             <li class="userMe">
+<<<<<<< HEAD
                 <div class="imgMe">
                     <img src="./img/favorite.jpg" alt="">
                 </div>
@@ -40,6 +41,26 @@
             <button class="funcBtn" onclick="searchShow()"><a href="#"><i><img src="./img/search.png" alt=""></i>&nbsp;查询</a></button>
             <button class="funcBtn" onclick="resetShow()"><a href="#"><i><img src="./img/reset.png" alt=""></i>&nbsp;刷新</a></button>
 
+=======
+                <div id="imgMe" onclick="show(event, 'MyInfo',true)">
+                    <img src="./img/favorite.jpg" alt="">
+                </div>
+            </li>
+            <li class="father tablinks active" id="Vergetable" onclick="show(event, 'main',false)">菜单管理</li>
+            <li class="father tablinks" id="Users" onclick="show(event, 'UserInfo',false)">用户管理</li>
+            <li class="father tablinks" id="Order" onclick="show(event, 'order',false)">订单管理</li>
+            <li class="father tablinks" id="MyInfoa" onclick="show(event, 'MyInfo',false)">个人信息</li>
+            <li class="father tablinks" id="Exit" onclick="exit()">退出登录</li>
+        </ul>
+    </div>
+    <div class="main tabcontent" id="main">
+        <div class="func">
+            <button class="funcBtn" onclick="addShow()"><a href="#"><i id="add"></i>&nbsp;新增</a></button>
+            <button class="funcBtn" onclick="searchShow()"><a href="#"><i id="search"><img src="./img/查询.png"
+                            alt=""></i>&nbsp;查询</a></button>
+            <button class="funcBtn" onclick="resetShow()"><a href="#"><i id="reset"><img src="./img/刷新.png"
+                            alt=""></i>&nbsp;刷新</a></button>
+>>>>>>> f19f73a (second登录和增删改查)
         </div>
         <table>
             <thead>
@@ -57,6 +78,7 @@
         </table>
         <!-- 表格底部的换页按钮 -->
         <div class="pageBtn">
+<<<<<<< HEAD
             <span class="shuoMing">共<i id="sumpages">X</i>页&nbsp;&nbsp;&nbsp;5条/页</span>
 
             <div class="changePage">
@@ -67,6 +89,29 @@
                 <input type="button" class="page" value="1" id="inOne">
                 <div class="twoBtn" id="rightBtn">
                     <img src="./img/right.png" alt="" id="rightStop">
+=======
+            <span class="shuoMing">共<i id="sumpages">X</i>页&nbsp;&nbsp;&nbsp;
+                <!-- <input type="text" value="5条/页" id="PerPage_bar"> -->
+                <button type="button" id="PerPage_bar" onclick="showSelect_bar()">5条/页</button>
+                <div class="Select_bar" id="Select_bar">
+                    <div class="bar">
+                        <ul id="bar">
+                            <li class="Barli" id="fiveBar" onclick="changeTofive()">5条/页</li>
+                            <li class="Barli" id="tenBar" onclick="changeToten()">10条/页</li>
+                            <li class="Barli" id="fifteenBar" onclick="changeTofifteen()">15条/页</li>
+                            <li class="Barli" id="twentyBar" onclick="changeTotwenty()">20条/页</li>
+                        </ul>
+                    </div>
+                </div>
+            </span>
+            <div class="changePage">
+                <div class="twoBtn" id="leftBtn">
+                    <img src="./img/left.png" alt="">
+                </div>
+                <input type="button" class="page" value="1" id="inOne">
+                <div class="twoBtn" id="rightBtn">
+                    <img src="./img/right.png" alt="">
+>>>>>>> f19f73a (second登录和增删改查)
                 </div>
             </div>
             <div class="change-input">
@@ -75,7 +120,11 @@
             </div>
         </div>
         <!-- 修改数据的弹窗 -->
+<<<<<<< HEAD
      <div class="modData">
+=======
+        <div class="modData">
+>>>>>>> f19f73a (second登录和增删改查)
             菜名:&nbsp;&nbsp;<input type="text" placeholder="name" id="name" value=""><br>
             价格:&nbsp;&nbsp;<input type="text" placeholder="price" id="price" value=""><br>
             描述:&nbsp;&nbsp;<input type="text" placeholder="desc" id="desc" value=""><br>
@@ -83,6 +132,7 @@
             属性:&nbsp;&nbsp;<input type="text" placeholder="0:面,1:米,2:饮品,3:水果" id="typeid" value=""><br>
             <input type="text" id="_id" value=""><br>
             <div class="btn">
+<<<<<<< HEAD
                 <button  onclick="confirmModBtn()">修改</button>
                 <button id="cancel" onclick="cancelBtn()">取消</button>
             </div>
@@ -113,4 +163,225 @@
 <script src="./js/jquery-3.4.1.js"></script>
 <script src="./js/home.js"></script>
 
+=======
+                <button onclick="confirmModBtn()">修改</button>
+                <button id="cancel" onclick="cancelBtn()">取消</button>
+            </div>
+        </div>
+        <!--添加数据的弹窗 -->
+        <div class="addData">
+            菜名:&nbsp;&nbsp;<input type="text" placeholder="name" id="addname" value=""><br>
+            价格:&nbsp;&nbsp;<input type="text" placeholder="price" id="addprice" value=""><br>
+            描述:&nbsp;&nbsp;<input type="text" placeholder="desc" id="adddesc" value=""><br>
+            分类:&nbsp;&nbsp;<input type="text" placeholder="typename" id="addtypename" value=""><br>
+            属性:&nbsp;&nbsp;<input type="text" placeholder="0:面,1:米,2:饮品,3:水果" id="addtypeid" value=""><br>
+            <input type="text" id="add_id" value=""><br>
+            <div class="btn">
+                <button onclick="confirmAddBtn()">添加</button>
+                <button class="cancel" onclick="cancelBtn()">取消</button>
+            </div>
+        </div>
+        <!-- 查询数据的窗口 -->
+        <div class="searchData">
+            关键词:&nbsp;&nbsp;<input type="text" id="searchContent">
+            <div class="btn">
+                <button onclick="confirmSearchBtn()">查询</button>
+                <button class="cancel" onclick="cancelBtn()">取消</button>
+            </div>
+        </div>
+    </div>
+    <div class="UserInfo tabcontent" id="UserInfo">  
+        <div class="func_users">
+            <!-- <button class="funcBtn_users" onclick="addShow_users()"><a href="#"><i id="add_users"><img src="./img/增加.png"
+                            alt=""></i>&nbsp;新增</a></button> -->
+            <button class="funcBtn_users" onclick="searchShow_users()"><a href="#"><i id="search_users"><img
+                            src="./img/查询.png" alt=""></i>&nbsp;查询</a></button>
+            <button class="funcBtn_users" onclick="resetShow_users()"><a href="#"><i id="reset_users"><img
+                            src="./img/刷新.png" alt=""></i>&nbsp;刷新</a></button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>用户名</th>
+                    <th>性别</th>
+                    <th>年龄</th>
+                    <th>电话</th>
+                    <th>积分</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody_users">
+            </tbody>
+        </table>
+        <!-- 表格底部的换页按钮 -->
+        <div class="pageBtn_users">
+            <span class="shuoMing_users">共<i id="sumpages_users">X</i>页&nbsp;&nbsp;&nbsp;
+                <!-- <input type="text" value="5条/页" id="PerPage_bar"> -->
+                <button type="button" id="PerPage_bar_users" onclick="showSelect_bar_users()">5条/页</button>
+                <div class="Select_bar_users" id="Select_bar_users">
+                    <div class="bar_users">
+                        <ul id="bar_users">
+                            <li class="Barli_users" id="fiveBar_users" onclick="changeTofive_users()">5条/页</li>
+                            <li class="Barli_users" id="tenBar_users" onclick="changeToten_users()">10条/页</li>
+                            <li class="Barli_users" id="fifteenBar_users" onclick="changeTofifteen_users()">15条/页</li>
+                            <li class="Barli_users" id="twentyBar_users" onclick="changeTotwenty_users()">20条/页</li>
+                        </ul>
+                    </div>
+                </div>
+            </span>
+            <div class="changePage_users">
+                <div class="twoBtn_users" id="leftBtn_users">
+                    <img src="./img/left.png" alt="">
+                </div>
+                <input type="button" class="page_users" value="1" id="inOne_users">
+                <div class="twoBtn_users" id="rightBtn_users">
+                    <img src="./img/right.png" alt="">
+                </div>
+            </div>
+            <div class="change-input_users">
+                到&nbsp;<input type="text" value="1" id="in_users">&nbsp;页
+                <button onclick="goPage_users()">go</button>
+            </div>
+        </div>
+        <!-- 查询用户数据的窗口 -->
+        <div class="searchData_users">
+            关键词:&nbsp;&nbsp;<input type="text" id="searchContent_users">
+            <div class="btn_users">
+                <button onclick="confirmSearchBtn_users()">查询</button>
+                <button class="cancel_users" onclick="cancelBtn_users()">取消</button>
+            </div>
+        </div>
+        <!-- 修改数据的弹窗 -->
+        <div class="modData_users">
+            用户:&nbsp;&nbsp;<input type="text" placeholder="name" id="name_users" value=""><br>
+            年龄:&nbsp;&nbsp;<input type="text" placeholder="age" id="age_users" value=""><br>
+            性别:&nbsp;&nbsp;<input type="text" placeholder="0:女,1:男" id="sex_users" value=""><br>
+            <input type="text" id="_id_users" value=""><br>
+            <div class="btn_users">
+                <button onclick="confirmModBtn_users()">修改</button>
+                <button id="cancel_users" onclick="cancelBtn_users()">取消</button>
+            </div>
+        </div>
+    </div>
+    <div class="MyInfob tabcontent" id="MyInfo">
+        <div class="showInfo_card">
+            <div class="smallTitle"><span>个人信息</span></div>
+            <div class="basicInfo">
+                <table>
+                    <tbody id="tableBody_myInfo">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- <div class="modMyInfo">
+            <div class="smalltitle_mod">基本资料</div>
+            <div class="MyInfo_mod">
+                昵称:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="name" id="nameMyInfo_mod" value=""><br>
+                年龄:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="age" id="ageMyInfo_mod" value=""><br>
+                性别:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="0:男,1:女" id="sexMyInfo_mod" value=""><br>
+                手机号:&nbsp;<input type="text" placeholder="phone" id="phoneMyInfo_mod" value=""><br>
+                <input type="text" id="_idMyInfo_mod" value=""><br>
+            
+            </div>
+            <div class="btnMyInfo_mod">
+                <button type="button">保存</button>
+                <button type="button" id="redbtn">关闭</button>
+            </div>
+        </div> -->
+    </div>
+    <div class="order tabcontent" id="order">
+        <div class="func_order">
+            <button class="funcBtn_order" onclick="addShow_order()"><a href="#"><i id="add_order"><img src="./img/增加.png"
+                            alt=""></i>&nbsp;新增</a></button>
+            <button class="funcBtn_order" onclick="searchShow_order()"><a href="#"><i id="search_order"><img
+                            src="./img/查询.png" alt=""></i>&nbsp;查询</a></button>
+            <button class="funcBtn_order" onclick="resetShow_order()"><a href="#"><i id="reset_order"><img
+                            src="./img/刷新.png" alt=""></i>&nbsp;刷新</a></button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>点餐人</th>
+                    <th>金额</th>
+                    <th>电话</th>
+                    <th>支付状态</th>
+                    <th>时间</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody_order">
+            </tbody>
+        </table>
+                <!-- 表格底部的换页按钮 -->
+                <div class="pageBtn_order">
+                    <span class="shuoMing_order">共<i id="sumpages_order">X</i>页&nbsp;&nbsp;&nbsp;
+                        <!-- <input type="text" value="5条/页" id="PerPage_bar"> -->
+                        <button type="button" id="PerPage_bar_order" onclick="showSelect_bar_order()">5条/页</button>
+                        <div class="Select_bar_order" id="Select_bar_order">
+                            <div class="bar_order">
+                                <ul id="bar_order">
+                                    <li class="Barli_order" id="fiveBar_order" onclick="changeTofive_order()">5条/页</li>
+                                    <li class="Barli_order" id="tenBar_order" onclick="changeToten_order()">10条/页</li>
+                                    <li class="Barli_order" id="fifteenBar_order" onclick="changeTofifteen_order()">15条/页</li>
+                                    <li class="Barli_order" id="twentyBar_order" onclick="changeTotwenty_order()">20条/页</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </span>
+                    <div class="changePage_order">
+                        <div class="twoBtn_order" id="leftBtn_order">
+                            <img src="./img/left.png" alt="">
+                        </div>
+                        <input type="button" class="page_order" value="1" id="inOne_order">
+                        <div class="twoBtn_order" id="rightBtn_order">
+                            <img src="./img/right.png" alt="">
+                        </div>
+                    </div>
+                    <div class="change-input_order">
+                        到&nbsp;<input type="text" value="1" id="in_order">&nbsp;页
+                        <button onclick="goPage_order()">go</button>
+                    </div>
+                </div>
+                 <!-- 查询用户数据的窗口 -->
+        <div class="searchData_order">
+            关键词:&nbsp;&nbsp;<input type="text" id="searchContent_order">
+            <div class="btn_order">
+                <button onclick="confirmSearchBtn_order()">查询</button>
+                <button class="cancel_order" onclick="cancelBtn_order()">取消</button>
+            </div>
+        </div>
+         <!-- 修改数据的弹窗 -->
+         <div class="modData_order">
+            点餐人:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="name" id="name_order" value=""><br>
+            金额:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="amount" id="amount_order" value=""><br>
+            手机号:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="phone" id="phone_order" value=""><br>
+            支付状态:&nbsp;&nbsp;<input type="text" placeholder="0:未支付,1:已支付" id="pay_order" value=""><br>
+            <input type="text" id="_id_order" value=""><br>
+            <div class="btn_order">
+                <button onclick="confirmModBtn_order()">修改</button>
+                <button id="cancel_order" onclick="cancelBtn_order()">取消</button>
+            </div>
+        </div>
+         <!--添加数据的弹窗 -->
+         <div class="addData_order">
+            点餐人:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="name" id="addname_order" value=""><br>
+            金额:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="amount" id="addamount_order" value=""><br>
+            手机号:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="phone" id="addphone_order" value=""><br>
+            支付状态:&nbsp;&nbsp;<input type="text" placeholder="0:未支付,1:已支付" id="addpay_order" value=""><br>
+            <input type="text" id="add_id_order" value=""><br>
+            <div class="btn_order">
+                <button onclick="confirmAddBtn_order()">添加</button>
+                <button id="cancel_order" onclick="cancelBtn_order()">取消</button>
+            </div>
+        </div>
+    </div>
+     <div id="zhezhao">
+    </div>
+</body>
+<script src="./js/jquery-3.4.1.js"></script>
+<script src="./js/home.js"></script>
+<script src="./js/users.js"></script>
+<script src="./js/MyInfo.js"></script>
+<script src="./js/order.js"></script>
+>>>>>>> f19f73a (second登录和增删改查)
 </html>
